@@ -1,0 +1,29 @@
+---
+title: "Eco_Region_Table"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+oaktrees <- read_csv("MainSheet.csv")
+```
+
+
+
+```{r Tidying}
+oaktrees %>%
+  select(-OBJECTID) %>%
+  select(-Join_Count) -> oaktreesneater
+
+oaktreesneater %>%
+  mutate("#Distinct_Occupied_Regions" = )
+```
+
+
+
+```{r something, echo=FALSE}
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
